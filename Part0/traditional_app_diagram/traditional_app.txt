@@ -1,0 +1,6 @@
+title Submission Request
+
+Browser->Server: form submit request (POST)
+note right of Server: access the req.body and create new note
+Server->Browser: Send Response with Code 302
+note left of Browser: recieve the response and reload the page

@@ -1,0 +1,16 @@
+title  New note in Single page app diagram
+
+browser->server: Only one POST request to the server containing the new note as JSON Data
+browser->server: {content: "Here is something new!", date: "2023-01-13T17:17:09.980Z"}
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+server-->browser: status code 201(the browser stays on the same page and sends no further HTTP requests)
+note over browser:
+We must specify the Content-Type header as application/json so that
+the server knows to parse the data as JSON
+end note
+
+
+
+
+
+
